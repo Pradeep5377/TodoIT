@@ -9,7 +9,7 @@ dotenv.config();
 passport.use(new GoogleStrategy({
   clientID: process.env.GOOGLE_CLIENT_ID,
   clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-  callbackURL: '/auth/google/callback'
+  callbackURL: 'https://todoit-vv91.onrender.com/auth/google/callback'
 }, async (accessToken, refreshToken, profile, done) => {
   let user = await User.findOne({ googleId: profile.id });
   if (!user) {
@@ -27,7 +27,7 @@ passport.use(new GoogleStrategy({
 passport.use(new GithubStrategy({
   clientID: process.env.GITHUB_CLIENT_ID,
   clientSecret: process.env.GITHUB_CLIENT_SECRET,
-  callbackURL: '/auth/github/callback'
+  callbackURL: 'https://todoit-vv91.onrender.com/auth/github/callback'
 }, async (accessToken, refreshToken, profile, done) => {
   const email = profile.emails?.[0]?.value || `${profile.username}@github.com`;
   let user = await User.findOne({ githubId: profile.id });
