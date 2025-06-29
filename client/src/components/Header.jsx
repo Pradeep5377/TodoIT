@@ -30,7 +30,7 @@ const fetchUser = async () => {
     const confirm = window.confirm("Logout?");
     if (!confirm) return;
     try {
-      await axios.get(`${import.meta.env.VITE_BACKEND_URL}/auth/logout`, { withCredentials: true });
+      await axios.get("/auth/logout", { withCredentials: true });
       navigate("/");
     } catch (err) {
       console.error("Logout failed:", err);
