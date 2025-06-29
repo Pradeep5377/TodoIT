@@ -1,0 +1,160 @@
+/* Base Task Card */
+.task-card {
+  background-color: #ffffff;
+  padding: 1.25rem;
+  border-radius: 10px;
+  border-left: 6px solid #4f8df5;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  position: relative;
+}
+
+.task-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+/* Finished State */
+.task-card.finished {
+  opacity: 0.7;
+  border-left-color: #2ecc71;
+}
+
+/* Task Header (title + menu) */
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.task-card h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+/* Description and Details */
+.task-card p {
+  margin: 0.4rem 0;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.task-card .shared-with {
+  margin-top: 0.5rem;
+  font-style: italic;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Edit Inputs */
+.task-card input[type="text"],
+.task-card input[type="date"],
+.task-card textarea,
+.task-card select {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.65rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fafafa;
+  transition: border-color 0.2s ease;
+}
+
+.task-card input:focus,
+.task-card textarea:focus,
+.task-card select:focus {
+  border-color: #4f8df5;
+  outline: none;
+}
+
+.task-card textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* Buttons in edit mode */
+.task-card button {
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+  padding: 0.5rem 1.2rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #4f8df5;
+  color: white;
+  transition: background-color 0.2s ease;
+}
+
+.task-card button:hover {
+  background-color: #3a76d0;
+}
+
+.task-card .btn-cancel {
+  background-color: #bdc3c7;
+  color: #2c3e50;
+}
+
+.task-card .btn-cancel:hover {
+  background-color: #95a5a6;
+}
+
+.task-card .btn-delete {
+  background-color: #e74c3c;
+}
+
+.task-card .btn-delete:hover {
+  background-color: #c0392b;
+}
+
+/* Three-dot menu button */
+.dots-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Dropdown container */
+.dropdown-wrapper {
+  position: relative;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  position: absolute;
+  top: 24px;
+  right: 0;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  min-width: 160px;
+  padding: 0.3rem 0;
+}
+
+/* Dropdown items */
+.dropdown-menu button {
+  background: none;
+  border: none;
+  padding: 0.6rem 1rem;
+  text-align: left;
+  font-size: 0.95rem;
+  color: #333;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.dropdown-menu button:hover {
+  background-color: #f0f0f0;
+}

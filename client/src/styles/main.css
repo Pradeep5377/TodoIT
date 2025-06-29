@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+  --black: #000;
+  --white: #fff;
+  --mainfont: 'Karla', sans-serif;
+  --google-blue: #4285F4;
+  --github-dark: #24292E;
+  --github-light: #f6f8fa;
+  --secondary-font: 'Poppins', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+/* /* body {
+  font-family: sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.dashboard, .login-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.filter-bar {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.filter-bar input,
+.filter-bar select {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.task-form input,
+.task-form textarea,
+.task-form select {
+  display: block;
+  margin: 10px auto;
+  padding: 8px;
+  width: 90%;
+}
+
+.task-card {
+  background: #fff;
+  margin: 10px auto;
+  padding: 15px;
+  width: 90%;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #ccc;
+  text-align: left;
+}
+
+.task-card.finished {
+  background-color: #e6ffe6;
+  border-left: 5px solid #00aa00;
+}
+
+.task-card button {
+  margin-right: 8px;
+}
+
+
+ in src/styles/global.css or a shared CSS file */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+.modal input {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.modal-actions button {
+  padding: 0.5rem 1.25rem;
+  border: none;
+  border-radius: 4px;
+  background: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.modal-actions button:last-child {
+  background: #6c757d;
+} 
