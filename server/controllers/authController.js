@@ -10,7 +10,7 @@ export const generateToken = (req, res) => {
     maxAge: 10 * 60 * 1000 // 1 day
   });
 
-  res.redirect(`${process.env.CLIENT_URL}/dashboard`);
+  res.redirect(process.env.CLIENT_URL + '/dashboard');
 };
 
 export const logout = (req, res) => {
