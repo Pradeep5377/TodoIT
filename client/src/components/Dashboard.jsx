@@ -38,6 +38,7 @@ const Dashboard = () => {
     socket.on('taskUpdated', getTasks);
     socket.on('taskDeleted', getTasks);
     socket.on('taskShared', getTasks);
+    return () => socket.disconnect();
   }, []);
 
   const handleAdd = async (task) => {
