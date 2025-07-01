@@ -8,7 +8,6 @@ import { Analytics } from "@vercel/analytics/react"
 function App() {
   const location = useLocation();
 
-  // Optional: Show header on all pages except login
   const hideHeader = location.pathname === '/';
 
   return (
