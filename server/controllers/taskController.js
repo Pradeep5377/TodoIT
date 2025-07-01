@@ -47,7 +47,6 @@ export const shareTask = async (req, res) => {
     req.io.emit("taskShared", { taskId: id, sharedWith: userToShare._id });
   }
 
-  // Return the updated sharedWith list:
   const populated = await Task.findById(id).populate('sharedWith', 'email');
   res.json(populated.sharedWith);
 };

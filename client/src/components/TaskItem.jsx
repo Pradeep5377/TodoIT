@@ -6,7 +6,7 @@ const TaskItem = ({ task, onDelete, onUpdate, onShare }) => {
   const [editing, setEditing] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [isShareOpen, setIsShareOpen] = useState(false);
-  const dropdownRef = useRef(null);
+  const taskdropdownRef = useRef(null);
 
   const [edited, setEdited] = useState({
     title: task.title,
@@ -46,7 +46,7 @@ const TaskItem = ({ task, onDelete, onUpdate, onShare }) => {
 
   useEffect(() => {
     const closeOnClickOutside = (e) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
+      if (taskdropdownRef.current && !taskdropdownRef.current.contains(e.target)) {
         setDropdownOpen(false);
       }
     };
@@ -72,15 +72,20 @@ const TaskItem = ({ task, onDelete, onUpdate, onShare }) => {
       ) : (
         <>
           <div className="task-header">
-            <h3>{task.title}</h3>
-            <div className="dropdown-wrapper" ref={dropdownRef}>
+              
+                <label className='task-checkbox-label'>
+                  <input type='checkbox' className='task-checkbox'
+                    checked={task.status === 'finished'}
+                    onChange={handleMarkFinished}
+                  />
+                </label>
+              
+              <h3>{task.title}</h3>
+            <div className="task-dropdown-wrapper" ref={taskdropdownRef}>
               <button className="dots-btn" onClick={handleDropdownToggle}>⋮</button>
               {dropdownOpen && (
-                <div className="dropdown-menu">
+                <div className="task-dropdown-menu">
                   <button onClick={toggleEdit}>Edit</button>
-                  {task.status !== 'finished' && (
-                    <button onClick={handleMarkFinished}>Mark as Finished</button>
-                  )}
                   <button onClick={handleDelete} className="btn-delete">Delete</button>
                   <button onClick={() => {
                     setIsShareOpen(true);
