@@ -22,7 +22,11 @@
   font-size: 0.85rem;
 }
 
-
+.task-card:hover {
+  ;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  transform: scale(1.08);
+}
 .task-card.finished {
   border :2px solid #2ecc71;
 }
@@ -92,13 +96,12 @@
 
 .task-card .btn-delete {
   color: red;
+
 }
 .task-card .btn-cancel:hover {
   background-color: #95a5a6;
 }
-.task-card .btn-delete:hover {
-  background-color: #c0392b;
-}
+
 
 
 
