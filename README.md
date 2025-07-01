@@ -1,4 +1,4 @@
-# ✅ Todoit – Fullstack Todo List App
+# ✅ Todoit – Fullstack Todo List/Task Manager App
 
 Todoit is a powerful, real-time Todo List web application built with the MERN stack and integrated with **Google & GitHub OAuth**, **task sharing**, and **real-time updates via Socket.IO**.
 
@@ -13,7 +13,7 @@ Todoit is a powerful, real-time Todo List web application built with the MERN st
 
 ## 🔧 Tech Stack
 
-- **Frontend**: React, Vite, Axios, FontAwesome  
+- **Frontend**: React, Vite, Axios, Socket.IO - client
 - **Backend**: Node.js, Express, MongoDB, Mongoose, Passport.js, JWT, Socket.IO  
 - **OAuth**: Google & GitHub login using Passport strategies  
 - **Deployment**: Vercel (Frontend), Render (Backend)
@@ -23,7 +23,7 @@ Todoit is a powerful, real-time Todo List web application built with the MERN st
 ## ✨ Features
 
 - 🔐 Google & GitHub OAuth Login  
-- 📋 Create, Update, Delete, and Filter Tasks  
+- 📋 Create, Read, Update, Delete, and Filter Tasks  
 - 👥 Share tasks with other users by email  
 - 🔎 Search and Priority-based filtering  
 - 📆 Due Date Tracking  
