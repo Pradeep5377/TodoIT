@@ -44,7 +44,6 @@ const TaskItem = ({ task, onDelete, onUpdate, onShare }) => {
 
   const handleDropdownToggle = () => setDropdownOpen(prev => !prev);
 
-  // Close dropdown if clicked outside
   useEffect(() => {
     const closeOnClickOutside = (e) => {
       if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {

@@ -102,7 +102,6 @@ const Dashboard = () => {
         <button className="new-task-btn" onClick={() => setShowModal(true)}>+ New Task</button>
       </div>
 
-      {/* Modal */}
       {showModal && (
         <div className="modal-overlay" onClick={() => setShowModal(false)}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
@@ -112,7 +111,6 @@ const Dashboard = () => {
         </div>
       )}
 
-      {/* Task List */}
       <div className="task-list">
         {filteredAndSorted.length > 0 ? (
           filteredAndSorted.map((task) => (

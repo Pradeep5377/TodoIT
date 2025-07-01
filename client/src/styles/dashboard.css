@@ -54,17 +54,11 @@
   background-color: #3a76d0;
 }
 
-.task-list {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
 
 .task-list p {
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 0.8rem;
   color: #777;
-  padding: 2rem;
 }
 
 .modal-overlay {
