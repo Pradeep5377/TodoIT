@@ -3,6 +3,7 @@ import Dashboard from './components/Dashboard';
 import Login from './pages/Login';
 import NotFound from './pages/NotFound';
 import Header from './components/Header';
+import { Analytics } from "@vercel/analytics/next"
 
 function App() {
   const location = useLocation();
@@ -18,6 +19,7 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <Analytics/>
     </>
   );
 }
