@@ -37,7 +37,7 @@ Todoit is a powerful, real-time Todo List web application built with the MERN st
 ## 📁 Folder Structure
 
 ```
-Todoit---Fullstack-Todo-List-App/
+TodoIT
 ├── client/       # React frontend (Vite)
 ├── server/       # Express backend
 └── README.md     # This file
@@ -50,8 +50,8 @@ Todoit---Fullstack-Todo-List-App/
 1. **Clone the repository:**
 
 ```bash
-git clone https://github.com/Pradeep5377/Todoit---Fullstack-Todo-List-App.git
-cd Todoit---Fullstack-Todo-List-App
+git clone https://github.com/Pradeep5377/TodoIT
+cd TodoIT
 ```
 
 2. **Frontend Setup (`client/`):**
