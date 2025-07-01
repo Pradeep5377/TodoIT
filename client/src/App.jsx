@@ -3,7 +3,7 @@ import Dashboard from './components/Dashboard';
 import Login from './pages/Login';
 import NotFound from './pages/NotFound';
 import Header from './components/Header';
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   const location = useLocation();
