@@ -133,29 +133,7 @@ npm run dev
 - Output Directory: `dist`
 - Root Directory: `client`
 
----
 
-## ⚠️ Notes
-
-- Make sure **CORS** is configured in the backend:
-```js
-app.use(cors({
-  origin: process.env.CLIENT_URL,
-  credentials: true
-}));
-```
-
-- Ensure backend URL is correctly set in frontend `.env` as:
-```env
-VITE_BACKEND_URL=https://todoit-vv91.onrender.com
-```
-
----
-
-## 🙋 Author
-
-- **Pradeep T M** – [@Pradeep5377](https://github.com/Pradeep5377)
-
----
+## Hackathon
 
 This project was developed as part of the **Katomaran Full Stack Hackathon** challenge. 
