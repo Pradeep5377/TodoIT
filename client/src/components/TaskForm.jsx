@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 import '../styles/taskForm.css'; 
-const TaskForm = ({ onSubmit }) => {
+const TaskForm = ({ onSubmit, onClose }) => {
   const [task, setTask] = useState({
     title: '',
     description: '',
@@ -28,6 +28,7 @@ const TaskForm = ({ onSubmit }) => {
         onChange={handleChange}
         placeholder="Title"
         required
+        className="task-title"
       />
       <textarea
         name="description"
@@ -51,7 +52,10 @@ const TaskForm = ({ onSubmit }) => {
         onChange={handleChange}
         required
       />
-      <button type="submit">Add Task</button>
+      <div className="form-buttons">
+        <button type="submit" className="add-btn">Add Task</button>
+        <button type="button" className="close-btn" onClick={onClose}>Close</button>
+      </div>
     </form>
   );
 };

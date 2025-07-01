@@ -107,8 +107,7 @@ const Dashboard = () => {
         <div className="modal-overlay" onClick={() => setShowModal(false)}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
             <h3>Create New Task</h3>
-            <TaskForm onSubmit={handleAdd} />
-            <button className="close-modal-btn" onClick={() => setShowModal(false)}>Close</button>
+            <TaskForm onSubmit={handleAdd} onClose={() => setShowModal(false)} />
           </div>
         </div>
       )}

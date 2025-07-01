@@ -31,6 +31,7 @@ const fetchUser = async () => {
     if (!confirm) return;
     try {
       await axios.get("/auth/logout", { withCredentials: true });
+      
       navigate("/");
     } catch (err) {
       console.error("Logout failed:", err);

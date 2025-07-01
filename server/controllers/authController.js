@@ -5,8 +5,8 @@ export const generateToken = (req, res) => {
 
 res.cookie('token', token, {
   httpOnly: true,
-  secure: true, // ⚠️ This must be true for HTTPS (Render is HTTPS)
-  sameSite: 'None', // ← required for cross-site cookie usage (Vercel ↔ Render)
+  secure: true,
+  sameSite: 'None', 
   maxAge: 24 * 60 * 60 * 1000
 });
 

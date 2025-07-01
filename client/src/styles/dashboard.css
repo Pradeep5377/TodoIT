@@ -1,14 +1,12 @@
-/* Container */
 .dashboard {
   padding: 2rem;
   max-width: 1000px;
   margin: auto;
-  background-color: #f4f7fa;
+  /* background-color: #f4f7fa; */
   min-height: 100vh;
   font-family: 'Segoe UI', sans-serif;
 }
 
-/* Top bar */
 .dashboard-top {
   display: flex;
   justify-content: space-between;
@@ -35,7 +33,10 @@
   min-width: 180px;
 }
 
-/* New Task Button */
+.filter-group select {
+  cursor: pointer;
+}
+
 .new-task-btn {
   white-space: nowrap;
   padding: 0.6rem 1.5rem;
@@ -53,7 +54,6 @@
   background-color: #3a76d0;
 }
 
-/* Task List */
 .task-list {
   display: flex;
   flex-direction: column;
@@ -67,7 +67,6 @@
   padding: 2rem;
 }
 
-/* Modal styles */
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -85,17 +84,11 @@
   background-color: white;
   padding: 2rem;
   border-radius: 10px;
-  max-width: 600px;
+  max-width: 500px;
   width: 100%;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.2rem;
   box-shadow: 0 6px 20px rgba(0,0,0,0.15);
 }
 
-.close-modal-btn {
-  margin-top: 1rem;
-  padding: 0.5rem 1rem;
-  background-color: #e74c3c;
-  border: none;
-  border-radius: 6px;
-  color: white;
-  cursor: pointer;
-}
