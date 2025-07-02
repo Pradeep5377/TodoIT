@@ -92,12 +92,11 @@
   padding: 0.5rem 1rem;
   font-size: 1rem !important;
   border: none;
+  background: none;
   border-radius: 6px;
   cursor: pointer;
   font-weight: 500;
   transition: background 0.3s ease;
 }
 
-.dropdown-item:hover {
-  background-color: #dc2626;
-}
+
