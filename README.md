@@ -1,6 +1,6 @@
 # ✅ TodoIT– Fullstack Todo List/Task Manager App
 
-Todoit is a powerful, real-time Todo List web application built with the MERN stack and integrated with **Google & GitHub OAuth**, **task sharing**, and **real-time updates via Socket.IO**.
+TodoIt is a powerful, real-time Todo List web application built with the MERN stack and integrated with **Google & GitHub OAuth**, **task sharing**, and **real-time updates via Socket.IO**.
 
 ---
 
